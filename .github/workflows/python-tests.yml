@@ -1,4 +1,5 @@
 name: Python Tests
+run-name: CI - CD implementation
 
 on:
   push:
