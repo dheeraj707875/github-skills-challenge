@@ -42,6 +42,7 @@ jobs:
           coverage report --fail-under=58
 
       - name: Publish coverage comment to PR
+        if: github.event_name == 'pull_request'
         uses: py-cov-action/python-coverage-comment-action@v3
         with:
           GITHUB_TOKEN: ${{ github.token }}
